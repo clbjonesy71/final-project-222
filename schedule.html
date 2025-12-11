@@ -21,29 +21,29 @@
 
 <div id = "container"> 
 
-<header> 
+<header>
+    <a href="index.html">
+        <img src="images/mobilespalogo.jpg" alt="CJ's Mobile Spa Logo">
+    </a>
+</header>
 
-<a href="index.html"><img src="images/mobilespalogo.jpg" alt="CJ's Mobile Spa Logo"/></a>
+<div id="wrapper">
 
-</header> 
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directions.html">Directions</a></li>
+        <li><a href="artist.html">Artist Profiles</a></li>
+        <li><a href="events.html">Events</a></li>
+    </ul>
+</nav>
 
-<div id = "wrapper">
-		 
-<nav> 
-	<ul>
-	  <li><a href = "index.html">Home</a></li>
-	  <li><a href = "directions.html">Directions</a></li>
-	  <li><a href = "artist.html">Artist Profiles</a></li>
-	  <li><a href = "events.html">Events</a></li>
-	</ul>
-</nav> 
-	 
-<article id = "main"> 
+<article id="main">
 
-<h2>Scheduling Form<h2>
-	<form action="submit_form.php" method="POST" style="max-width: 400px; margin: 20px auto;">
-  <h2>Schedule an Appointment</h2>
-  
+<h2>Schedule an Appointment</h2>
+
+<form action="submit_form.php" method="POST" style="max-width: 400px; margin: 20px auto;">
+
   <label for="name">Full Name:</label><br>
   <input type="text" id="name" name="name" required><br><br>
   
@@ -53,10 +53,10 @@
   <label for="service">Select Service:</label><br>
   <select id="service" name="service" required>
     <option value="">-- Choose a service --</option>
-    <option value="massage">Massage</option>
+    <option value="Massage">Massage</option>
     <option value="Cold Plunge">Cold Plunge</option>
     <option value="Sauna">Sauna</option>
-	<option value="All Three">All Three</option>
+    <option value="All Three">All Three</option>
   </select>
   <br><br>
 
@@ -67,6 +67,7 @@
   <input type="time" id="time" name="time" required><br><br>
 
   <button type="submit">Schedule Appointment</button>
+
 </form>
 </article> <!-- end main -->
 
@@ -100,4 +101,5 @@
 </div> <!-- end container -->
 
 </body>
+
 </html>
